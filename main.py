@@ -6,7 +6,7 @@ app = FastAPI(title="Function Hall Booking System")
 
 @app.get("/")
 def root():
-    return {"message": "Function Hall Booking System API is running"}
+    return {"message": "Function Hall Booking System API is running 🚀"}
 
 
 app.include_router(users.router)
