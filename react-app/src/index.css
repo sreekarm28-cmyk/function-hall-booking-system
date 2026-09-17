@@ -1,0 +1,1205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f7f7fa, #eeecf0);
+}
+
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.login-box h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+    color: #4f46e5;
+}
+
+.login-box > p {
+    margin: 10px 0 30px;
+    text-align: center;
+    color: #6b7280;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 13px 14px;
+    margin-bottom: 20px;
+    border: 2px solid #e5e7eb;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.login-box input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.login-box button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login-box button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(99, 102, 241, 0.35);
+}
+
+
+/* =========================
+   CUSTOMER HALLS PAGE
+========================= */
+
+.halls-page {
+    min-height: 100vh;
+    padding: 50px;
+    background: #f3f4f6;
+}
+
+.halls-page h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #111827;
+    font-size: 32px;
+}
+
+.halls-subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   HALL GRID
+========================= */
+
+.hall-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 22px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HALL CARD
+========================= */
+
+.hall-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 250px;
+
+    background: white;
+
+    padding: 24px;
+
+    border-radius: 14px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.2s;
+}
+
+.hall-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.hall-card h2 {
+    margin: 0 0 8px;
+
+    color: #111827;
+
+    font-size: 21px;
+}
+
+.hall-location {
+    margin: 0 0 15px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+.hall-description {
+    margin: 0 0 20px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   HALL DETAILS
+========================= */
+
+.hall-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #e5e7eb;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   BOOK BUTTON
+========================= */
+
+.book-button {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.book-button:hover {
+    background: #4338ca;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   NO HALLS
+========================= */
+
+.no-halls {
+    max-width: 600px;
+
+    margin: 50px auto;
+
+    padding: 35px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+}
+
+.no-halls h2 {
+    margin: 0 0 8px;
+
+    color: #111827;
+}
+
+.no-halls p {
+    margin: 0;
+
+    color: #6b7280;
+}
+
+
+/* =========================
+   CUSTOMER MESSAGE
+========================= */
+
+.customer-message {
+    max-width: 700px;
+
+    margin: 0 auto 25px;
+
+    padding: 12px 16px;
+
+    text-align: center;
+
+    background: #ecfdf5;
+
+    border: 1px solid #bbf7d0;
+
+    border-radius: 8px;
+
+    color: #15803d;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   BOOKING MODAL
+========================= */
+
+.booking-modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(15, 23, 42, 0.5);
+}
+
+.booking-modal {
+    width: 100%;
+
+    max-width: 480px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 28px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   BOOKING MODAL HEADER
+========================= */
+
+.booking-modal-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 22px;
+}
+
+.booking-modal-header h2 {
+    margin: 0 0 5px;
+
+    color: #111827;
+
+    font-size: 21px;
+}
+
+.booking-modal-header p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+.booking-close-button {
+    width: 32px;
+
+    height: 32px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f3f4f6;
+
+    color: #6b7280;
+
+    font-size: 23px;
+
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.booking-close-button:hover {
+    background: #e5e7eb;
+
+    color: #111827;
+}
+
+
+/* =========================
+   BOOKING SUMMARY
+========================= */
+
+.booking-summary {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+}
+
+.booking-summary div {
+    padding: 14px;
+
+    background: #f9fafb;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 9px;
+}
+
+.booking-summary span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #6b7280;
+
+    font-size: 12px;
+}
+
+.booking-summary strong {
+    color: #111827;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   BOOKING FORM
+========================= */
+
+.booking-modal form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.booking-modal label {
+    margin-bottom: 7px;
+
+    color: #374151;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.booking-modal input {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    margin-bottom: 16px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.booking-modal input:focus {
+    border-color: #6366f1;
+
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+
+/* =========================
+   BOOKING LIMIT
+========================= */
+
+.booking-limit {
+    margin: -4px 0 15px;
+
+    color: #6b7280;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   BOOKING ERROR
+========================= */
+
+.booking-error {
+    margin: 0 0 15px;
+
+    padding: 10px 12px;
+
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+
+    border-radius: 7px;
+
+    color: #dc2626;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   BOOKING MODAL ACTIONS
+========================= */
+
+.booking-modal-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 9px;
+
+    margin-top: 5px;
+}
+
+
+/* CANCEL */
+
+.booking-cancel-button {
+    padding: 10px 16px;
+
+    background: #f3f4f6;
+
+    color: #374151;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.booking-cancel-button:hover {
+    background: #e5e7eb;
+}
+
+
+/* CONFIRM */
+
+.booking-confirm-button {
+    padding: 10px 16px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.booking-confirm-button:hover {
+    background: #4338ca;
+}
+
+.booking-confirm-button:disabled {
+    background: #a5b4fc;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .halls-page {
+        padding: 30px 18px;
+    }
+
+    .halls-page h1 {
+        font-size: 26px;
+    }
+
+    .hall-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-modal {
+        padding: 22px;
+    }
+
+    .booking-modal-actions {
+        flex-direction: column-reverse;
+    }
+
+    .booking-modal-actions button {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   OWNER DASHBOARD
+========================= */
+
+.owner-page {
+    min-height: 100vh;
+    padding: 40px 60px;
+    background: #f3f4f6;
+}
+
+.owner-page h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 32px;
+}
+
+.owner-subtitle {
+    margin: 8px 0 30px;
+    color: #6b7280;
+}
+
+
+/* =========================
+   OWNER STATS
+========================= */
+
+.owner-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    max-width: 1100px;
+    margin: 0 auto 30px;
+}
+
+.owner-card {
+    background: white;
+    padding: 20px 24px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.owner-card h2 {
+    margin: 0 0 8px;
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.owner-card p {
+    margin: 0;
+    color: #111827;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   OWNER SECTIONS
+========================= */
+
+.owner-section {
+    max-width: 1100px;
+    margin: 0 auto 25px;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.owner-section h2 {
+    margin-top: 0;
+    color: #111827;
+}
+
+.owner-section p {
+    color: #6b7280;
+}
+
+
+/* =========================
+   SECTION HEADER
+========================= */
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    margin: 0;
+}
+
+
+/* =========================
+   CREATE HALL BUTTON
+========================= */
+
+.create-button {
+    background: #4f46e5;
+    color: white;
+
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.create-button:hover {
+    background: #4338ca;
+}
+
+
+/* =========================
+   HALL CARDS - OWNER
+========================= */
+
+.hall-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.hall-card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    box-shadow: none;
+}
+
+.hall-card h2 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 18px;
+}
+
+.hall-card p {
+    margin: 6px 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================
+   HALL ACTION BUTTONS
+========================= */
+
+.hall-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+
+/* EDIT */
+
+.edit-button {
+    background: #eef2ff;
+    color: #4338ca;
+
+    border: 1px solid #c7d2fe;
+    padding: 7px 13px;
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    background: #e0e7ff;
+}
+
+
+/* REMOVE */
+
+.remove-button {
+    background: #fef2f2;
+    color: #dc2626;
+
+    border: 1px solid #fecaca;
+    padding: 7px 13px;
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background: #fee2e2;
+}
+
+
+/* ACTIVATE */
+
+.activate-button {
+    background: #ecfdf5;
+    color: #16a34a;
+
+    border: 1px solid #bbf7d0;
+    padding: 7px 13px;
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.activate-button:hover {
+    background: #dcfce7;
+}
+
+
+/* =========================
+   OWNER MESSAGE
+========================= */
+
+.owner-message {
+    max-width: 1100px;
+    margin: 0 auto 20px;
+
+    padding: 12px 16px;
+
+    background: #ecfdf5;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+
+    color: #15803d;
+    font-weight: 600;
+}
+
+
+/* =========================
+   BOOKINGS
+========================= */
+
+.booking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.booking-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 16px;
+
+    background: #f9fafb;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.booking-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.booking-info strong {
+    color: #111827;
+    font-size: 14px;
+}
+
+.booking-info span {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================
+   BOOKING ACTIONS
+========================= */
+
+.booking-actions {
+    display: flex;
+    gap: 7px;
+}
+
+
+/* CONFIRM */
+
+.confirm-button {
+    background: #ecfdf5;
+    color: #15803d;
+
+    border: 1px solid #bbf7d0;
+    padding: 6px 11px;
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.confirm-button:hover {
+    background: #dcfce7;
+}
+
+
+/* COMPLETE */
+
+.complete-button {
+    background: #eff6ff;
+    color: #2563eb;
+
+    border: 1px solid #bfdbfe;
+    padding: 6px 11px;
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* CANCEL BOOKING */
+
+.booking-actions .cancel-button {
+    background: #fef2f2;
+    color: #dc2626;
+
+    border: 1px solid #fecaca;
+    padding: 6px 11px;
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.booking-actions .cancel-button:hover {
+    background: #fee2e2;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(15, 23, 42, 0.45);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.modal-box {
+    width: 450px;
+    max-width: calc(100% - 30px);
+
+    max-height: 90vh;
+    overflow-y: auto;
+
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+/* MODAL HEADER */
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 22px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: #111827;
+}
+
+.close-button {
+    background: none;
+    border: none;
+
+    font-size: 28px;
+    color: #6b7280;
+
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #111827;
+}
+
+
+/* MODAL FORM */
+
+.modal-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-box label {
+    margin-bottom: 7px;
+
+    color: #374151;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.modal-box input,
+.modal-box textarea {
+    width: 100%;
+    padding: 11px;
+
+    margin-bottom: 16px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+
+    font-size: 14px;
+    outline: none;
+}
+
+.modal-box input:focus,
+.modal-box textarea:focus {
+    border-color: #6366f1;
+}
+
+
+/* MODAL ACTIONS */
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    margin-top: 5px;
+}
+
+
+/* MODAL CANCEL */
+
+.modal-actions .cancel-button {
+    background: #f3f4f6;
+    color: #374151;
+
+    border: 1px solid #d1d5db;
+
+    padding: 10px 18px;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.modal-actions .cancel-button:hover {
+    background: #e5e7eb;
+}
+
+
+/* MODAL SUBMIT */
+
+.modal-actions button[type="submit"] {
+    background: #4f46e5;
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.modal-actions button[type="submit"]:hover {
+    background: #4338ca;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .owner-page {
+        padding: 25px 20px;
+    }
+
+    .owner-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .hall-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .booking-info {
+        flex-wrap: wrap;
+        gap: 8px 15px;
+    }
+
+    .booking-actions {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .halls-page {
+        padding: 25px 15px;
+    }
+
+    .owner-section {
+        padding: 18px;
+    }
+
+    .section-header {
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .modal-box {
+        padding: 22px;
+    }
+}
+
+.app-header {
+    height: 64px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.app-header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.app-header button {
+    padding: 9px 18px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.app-header button:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+}
